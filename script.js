@@ -72,9 +72,11 @@ const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
-    e.preventDefault();
     const href = link.getAttribute("href");
 
+    if (!href.startsWith("https") && !href.startsWith("mailto:")) {
+      e.preventDefault();
+    }
     // Scroll back to top
     if (href === "#")
       window.scrollTo({
