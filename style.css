@@ -675,3 +675,19 @@ body {
 .icon-mobile-nav-close[name="close-outline"] {
   display: none;
 }
+
+.check-this:link,
+.check-this:visited {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #b57d35;
+  border-bottom: 1px solid #b57d35;
+  transition: all 0.3s;
+}
+
+.check-this:hover,
+.check-this:active {
+  color: #ca8b39;
+
+  border-bottom: 1px solid rgba(181, 126, 53, 0);
+}
