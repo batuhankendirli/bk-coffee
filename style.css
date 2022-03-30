@@ -703,6 +703,7 @@ body {
 
 .footer-logo {
   display: block;
+  width: max-content;
   margin-bottom: 3.2rem;
 }
 
